@@ -10,7 +10,6 @@ import random
 from fetchApiData import FetchApi_MainWindow
 from GlueMenu import Ui_GlueMenu
 from functions_graph import increase_speed, decrease_speed, start_simulation, stop_simulation, rewind, change_color, export_to_pdf, remove_signal,remove_linked_signals
-from nonRectangular import PolarEcgPlot
 from PyQt5 import QtCore, QtGui, QtWidgets
 from nonRectangular2 import CombinedRespiratoryPlot
 
@@ -171,14 +170,6 @@ class Ui_MainWindow(QMainWindow):
             self.deleteSignalFromList(2, selectedSignal)
 
 
-    def show_old_ecg_plot(self):
-        print("Start Non Rectangular Coordinates")
-        self.ecg_plot_window = PolarEcgPlot()
-        all_signals = self.graph_1_files + self.graph_2_files
-        all_colors = self.graph1_colors = self.graph2_colors
-        self.ecg_plot_window.LoadEcgSignals(all_signals, all_colors)
-        self.ecg_plot_window.show()
-        
 
     def show_new_ecg_plot(self):
         print("Start Non Rectangular Coordinates")
@@ -239,7 +230,7 @@ class Ui_MainWindow(QMainWindow):
         super().__init__()
         self.setupUi()
         self.setWindowTitle("Multi-Channel Signal Viewer")
-        self.setStyleSheet("background-color:black; color:white")
+        self.setStyleSheet("background-color:white; color:black")
            
         self.graph_1_files = []  # Store file paths for Graph 1 signals
         self.graph_2_files = []  # Store file paths for Graph 2 signals
@@ -344,6 +335,7 @@ class Ui_MainWindow(QMainWindow):
         self.graph1 = pg.PlotWidget()
         self.graph1.showGrid(x=True, y=True)
         self.legend1 = self.graph1.addLegend()
+        self.graph1.setBackground('w')
 
         # Function to toggle visibility
         def toggle_visibility(event, item):
@@ -430,7 +422,7 @@ class Ui_MainWindow(QMainWindow):
         self.changeColorGraph1.setObjectName("changeColorGraph1")
         self.changeColorGraph1.setStyleSheet("""
             QPushButton{
-                background-color:white;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
+                background-color:#a5a5a5;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
             }
         """)
         self.gridLayout.addWidget(self.changeColorGraph1, 2, 1, 1, 1)
@@ -439,7 +431,7 @@ class Ui_MainWindow(QMainWindow):
         self.browseFileGraph1.setObjectName("browse File Graph 1")
         self.browseFileGraph1.setStyleSheet("""
             QPushButton{
-                background-color:white;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
+                background-color:#a5a5a5;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
             }
         """)
         self.browseFileGraph1.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -494,7 +486,7 @@ class Ui_MainWindow(QMainWindow):
         self.speedUpGraph1.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.speedUpGraph1.setStyleSheet("""
             QPushButton{
-                background-color:white;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
+                background-color:#a5a5a5;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
             }
         """)
         self.gridLayout.addWidget(self.speedUpGraph1, 2, 5, 1, 1)
@@ -504,7 +496,7 @@ class Ui_MainWindow(QMainWindow):
         self.speedDownGraph1.setObjectName("speedDownGraph1")
         self.speedDownGraph1.setStyleSheet("""
             QPushButton{
-                background-color:white;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
+                background-color:#a5a5a5;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
             }
         """)
         self.gridLayout.addWidget(self.speedDownGraph1, 2, 6, 1, 1)
@@ -528,6 +520,7 @@ class Ui_MainWindow(QMainWindow):
         self.graph2 = pg.PlotWidget()
         self.graph2.showGrid(x=True, y=True)
         self.legend2 = self.graph2.addLegend()
+        self.graph2.setBackground('w')
 
         # Function to toggle visibility
         def toggle_visibility(event, item):
@@ -601,7 +594,7 @@ class Ui_MainWindow(QMainWindow):
         self.changeColorGraph2.setObjectName("pushButton_12")
         self.changeColorGraph2.setStyleSheet("""
             QPushButton{
-                background-color:white;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
+                background-color:#a5a5a5;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
             }
         """)
         self.gridLayout.addWidget(self.changeColorGraph2, 4, 1, 1, 1)
@@ -610,7 +603,7 @@ class Ui_MainWindow(QMainWindow):
         self.browseFileGraph2.setObjectName("pushButton_13")
         self.browseFileGraph2.setStyleSheet("""
             QPushButton{
-                background-color:white;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
+                background-color:#a5a5a5;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
             }
         """)
         self.browseFileGraph2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -659,7 +652,7 @@ class Ui_MainWindow(QMainWindow):
         self.speedUpGraph2.setObjectName("pushButton_9")
         self.speedUpGraph2.setStyleSheet("""
             QPushButton{
-                background-color:white;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
+                background-color:#a5a5a5;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
             }
         """)
         self.gridLayout.addWidget(self.speedUpGraph2, 4, 5, 1, 1)
@@ -668,7 +661,7 @@ class Ui_MainWindow(QMainWindow):
         self.speedDownGraph2.setObjectName("pushButton_11")
         self.speedDownGraph2.setStyleSheet("""
             QPushButton{
-                background-color:white;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
+                background-color:#a5a5a5;color:black;font-weight:bold;border-radius:10px;font-size:15px;padding:10px;border:2px solid black;
             }
         """)
         self.gridLayout.addWidget(self.speedDownGraph2, 4, 6, 1, 1)
