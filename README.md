@@ -1,5 +1,6 @@
 # Multi-Channel Signal Viewer
 ## Screenshots
+![signal viewer](Images/signal viewer.jpeg)
 
 
 ## Introduction
@@ -23,6 +24,7 @@ This project is a Python Qt-based desktop application designed to handle multi-c
 - **Non-Rectangular Visualization**: Provides non-rectangular views of the signal data for advanced insights and visualization beyond standard Cartesian graphs.
 - **API Integration**: An API feature allows integration with external systems for importing/exporting signals or interacting with remote signal sources.
 - **Boundary Conditions**: Scrolling is restricted within the signal boundaries to prevent empty graphs.
+- **Signal Gluing**: Users can select and cut segments from the two signals displayed in each of the two viewers. These segments can then be glued together to create a continuous signal. This feature enables users to merge different parts of signals, which is useful for combining multiple segments or signals from different sources. Once glued, the new signal behaves as a single, continuous signal for further analysis or visualization.
 - **Export and Reporting**:
   - Generate PDF reports with snapshots of graphs and signal statistics.
   - Include data statistics (mean, standard deviation, duration, min, and max values) in a well-structured table.
