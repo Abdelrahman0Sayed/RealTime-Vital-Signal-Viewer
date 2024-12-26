@@ -1,6 +1,6 @@
 # Multi-Channel Signal Viewer
 ## Screenshots
-![signal viewer]([images/signal viewer.jpeg](https://github.com/Abdelrahman0Sayed/RealTime-Vital-Signal-Viewer/blob/main/Images/signal%20viewer.jpeg))
+! [signal viewer] ([Images/signal viewer.jpeg](https://github.com/Abdelrahman0Sayed/RealTime-Vital-Signal-Viewer/blob/main/Images/signal%20viewer.jpeg))
 
 
 ## Introduction
