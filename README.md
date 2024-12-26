@@ -1,13 +1,9 @@
 # Multi-Channel Signal Viewer
-## Screenshots
-*Signal Viewer*
-![signal viewer](Images/signal-viewer.png)
-*Non-rect. Mode*
-![non-rect](Images/non-rect_jpeg.png)
-*Gluing Signals*
-![glued signal](Images/glued-signal.png)
-*Signal Statistics*
-![statistics](Images/Signal-Statistics.png)
+
+
+
+
+
 
 
 ## Introduction
@@ -28,14 +24,22 @@ This project is a Python Qt-based desktop application designed to handle multi-c
   - Zoom in/out and pan signals.
   - Scroll through signals using sliders.
   - Move signals between the two graphs.
+*Signal Viewer*
+![signal viewer](Images/signal-viewer.png)
 - **Non-Rectangular Visualization**: Provides non-rectangular views of the signal data for advanced insights and visualization beyond standard Cartesian graphs.
+*Non-rect. Mode*
+![non-rect](Images/non-rect_jpeg.png)
 - **API Integration**: An API feature allows integration with external systems for importing/exporting signals or interacting with remote signal sources.
 - **Boundary Conditions**: Scrolling is restricted within the signal boundaries to prevent empty graphs.
+*Gluing Signals*
+![glued signal](Images/glued-signal.png)
 - **Signal Gluing**: Users can select and cut segments from the two signals displayed in each of the two viewers. These segments can then be glued together to create a continuous signal. This feature enables users to merge different parts of signals, which is useful for combining multiple segments or signals from different sources. Once glued, the new signal behaves as a single, continuous signal for further analysis or visualization.
 - **Export and Reporting**:
   - Generate PDF reports with snapshots of graphs and signal statistics.
   - Include data statistics (mean, standard deviation, duration, min, and max values) in a well-structured table.
   - Support single or multi-page PDF reports with an organized layout.
+  *Signal Statistics*
+![statistics](Images/Signal-Statistics.png)
 - **User-Friendly Controls**: Includes intuitive sliders for scrolling, mouse-based panning, and easy-to-use UI elements for a seamless experience.
 
 
