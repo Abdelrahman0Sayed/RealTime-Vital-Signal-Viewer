@@ -1,6 +1,13 @@
 # Multi-Channel Signal Viewer
 ## Screenshots
-! [signal viewer] ([Images/signal viewer.jpeg](https://github.com/Abdelrahman0Sayed/RealTime-Vital-Signal-Viewer/blob/main/Images/signal%20viewer.jpeg))
+*Signal Viewer*
+![signal viewer](Images/signal-viewer.png)
+*Non-rect. Mode*
+![non-rect](Images/non-rect_jpeg.png)
+*Gluing Signals*
+![glued signal](Images/glued-signal.png)
+*Signal Statistics*
+![statistics](Images/Signal-Statistics.png)
 
 
 ## Introduction
