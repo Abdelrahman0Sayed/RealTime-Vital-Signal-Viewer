@@ -230,7 +230,7 @@ class Ui_MainWindow(QMainWindow):
         super().__init__()
         self.setupUi()
         self.setWindowTitle("Multi-Channel Signal Viewer")
-        self.setStyleSheet("background-color:white; color:black")
+        self.setStyleSheet("background-color:black; color:white")
            
         self.graph_1_files = []  # Store file paths for Graph 1 signals
         self.graph_2_files = []  # Store file paths for Graph 2 signals
@@ -335,7 +335,7 @@ class Ui_MainWindow(QMainWindow):
         self.graph1 = pg.PlotWidget()
         self.graph1.showGrid(x=True, y=True)
         self.legend1 = self.graph1.addLegend()
-        self.graph1.setBackground('w')
+        self.graph1.setBackground('black')
 
         # Function to toggle visibility
         def toggle_visibility(event, item):
@@ -520,7 +520,7 @@ class Ui_MainWindow(QMainWindow):
         self.graph2 = pg.PlotWidget()
         self.graph2.showGrid(x=True, y=True)
         self.legend2 = self.graph2.addLegend()
-        self.graph2.setBackground('w')
+        self.graph2.setBackground('black')
 
         # Function to toggle visibility
         def toggle_visibility(event, item):

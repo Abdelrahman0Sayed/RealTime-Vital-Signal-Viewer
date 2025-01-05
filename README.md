@@ -39,4 +39,5 @@ This project is a Python Qt-based desktop application designed to handle multi-c
 ![statistics](Images/Signal-Statistics.png)
 - **User-Friendly Controls**: Includes intuitive sliders for scrolling, mouse-based panning, and easy-to-use UI elements for a seamless experience.
 
-
+### **Demo**
+![demo video](Task1_Demo.mp4)
