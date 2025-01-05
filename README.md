@@ -40,4 +40,4 @@ This project is a Python Qt-based desktop application designed to handle multi-c
 - **User-Friendly Controls**: Includes intuitive sliders for scrolling, mouse-based panning, and easy-to-use UI elements for a seamless experience.
 
 ### **Demo**
-![demo video](https://github.com/user-attachments/assets/f89a9bb0-200c-4408-bb18-b2593b5f4746)
+https://github.com/user-attachments/assets/f89a9bb0-200c-4408-bb18-b2593b5f4746
