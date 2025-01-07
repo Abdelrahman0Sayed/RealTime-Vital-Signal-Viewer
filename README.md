@@ -89,10 +89,4 @@ python newSignalViewer.py
     <br />
     <sub><b>Kareem El-Badawi</b></sub></a>
     </td>
-    <td align="center">
-    <a href="https://github.com/NadaMohamedElBasel" target="_black">
-    <img src="https://avatars.githubusercontent.com/u/110432081?v=4" width="150px;" alt="Nada El-Basel"/>
-    <br />
-    <sub><b>Nada El-Basel</b></sub></a>
-    </td>
       </tr>
